@@ -15,7 +15,6 @@ class CreatePembayaransTable extends Migration
     {
         Schema::create('pembayarans', function (Blueprint $table) {
             $table->id();
-            $table->string('nisn', 10);
             $table->date('tanggal_bayar');
             $table->string('bulan_bayar', 8);
             $table->string('tahun_bayar', 4);
